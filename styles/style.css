@@ -120,6 +120,27 @@ main{
     padding-top: 1.5rem;
 }
 
+
+/* Feature Section Styles */
+
+.feature-container{
+    padding: 130px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 145px;
+}
+
+.feature-description{
+    margin: 30px 0;
+}
+
+.feature-description > h3{
+    border-left: 4px solid #FF900E;
+    padding-left: 1.25rem;
+    margin-top: 2rem;
+}
+
+
 /* Facts Styles */
 .fact-container{
     padding: 150px 0;
