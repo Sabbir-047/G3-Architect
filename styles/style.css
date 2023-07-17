@@ -89,14 +89,13 @@ nav li a{
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 85px auto;
 }
 
 /* team section styles */
 .team-container{
     display: flex;
     align-items: center;
-    padding: 85px 16px 0px 65px;
 }
 
 .team-img-container{
@@ -122,7 +121,7 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .team-container{
         flex-direction: column;
     }
     nav ul{
@@ -134,15 +133,23 @@ main{
     .banner-content{
         width: 100%;
         padding-top: 60px;
+        /* padding-right: 1.5rem;
+        padding-left: 1.5rem; */
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+    .team-content{
+        margin-top: 2rem;
     }
 }
 
 /* tablet or medium devices */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1060px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav, .team-container{
         flex-direction: column;
     }
     nav ul{
@@ -151,5 +158,10 @@ main{
     .banner-content{
         width: 100%;
         padding-top: 60px;
+    }
+    .team-content{
+        margin-top: 2rem;
+        /* padding-right: 1.5rem;
+        padding-left: 1.5rem; */
     }
 }
