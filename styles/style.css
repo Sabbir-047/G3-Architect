@@ -125,9 +125,9 @@ main{
 
 .feature-container{
     padding: 130px 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 145px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
 }
 
 .feature-description{
@@ -161,6 +161,11 @@ main{
     color: #131313;
 }
 
+.feature-img img{
+    height: 90%;
+    margin-left: 4.1rem;
+}
+
 .ten-years-badge{
     background-color: #FF900E;
     color: #FFF;
@@ -168,6 +173,8 @@ main{
     border-radius: 8px;
     padding: 2.5rem;
     text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 
 .ten-years-badge h2{
@@ -246,7 +253,7 @@ main{
     header{
         padding: 20px;
     }
-    nav, .team-container, .card-container{
+    nav, .team-container, .card-container, .feature-container{
         flex-direction: column;
     }
     nav ul{
@@ -278,6 +285,17 @@ main{
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    .feature-container{
+        padding: 1.5rem;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        position: static;
+        max-width: 250px;
+    }
 }
 
 /* tablet or medium devices */
@@ -285,7 +303,7 @@ main{
     header{
         padding: 20px;
     }
-    nav, .team-container{
+    nav, .team-container, .feature-container{
         flex-direction: column;
     }
     nav ul{
@@ -309,5 +327,16 @@ main{
     .sponsor-company-container{
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    .feature-container{
+        padding: 1.5rem;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        /* position: static; */
+        max-width: 250px;
     }
 }
