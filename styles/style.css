@@ -154,6 +154,33 @@ main{
     background-color: #fcd1a0;
 }
 
+
+.feature-box-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #131313;
+}
+
+.ten-years-badge{
+    background-color: #FF900E;
+    color: #FFF;
+    width: 342px;
+    border-radius: 8px;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.ten-years-badge h2{
+    font-size: 4.1rem;
+    font-weight: 700;
+}
+
+.ten-years-badge p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
 /* Facts Styles */
 .fact-container{
     padding: 150px 0;
