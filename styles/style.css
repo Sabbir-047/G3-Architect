@@ -22,6 +22,7 @@
     color: #727272;
     font-size: 1rem;
     line-height: 1.625rem;
+    margin-top: 1.25rem;
 }
 
 .primary-btn{
@@ -34,6 +35,13 @@
     border-radius: 0.5rem;
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.primary-btn:hover{
+    background-color: orangered;
+    color: black;
+    transition: 0.4s ease-in-out;
+    rotate: 1deg;
 }
 
 
@@ -112,6 +120,48 @@ main{
     padding-top: 1.5rem;
 }
 
+/* Facts Styles */
+.fact-container{
+    padding: 150px 0;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0px 0px 50px 0px rgb(218, 217, 215);
+}
+
+.card:hover{
+    background-color: rgb(255, 214, 81);
+    box-shadow: 0px 0px 50px 1px rgb(170, 161, 161);
+    transition: .3s ease-in;
+    rotate: 2deg;
+}
+
+.card-status{
+    color: #424242;
+    padding-top: .8rem;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+}
+
+
+
+
+
+
 
 
 /* Responsive-media-queries */
@@ -121,7 +171,7 @@ main{
     header{
         padding: 20px;
     }
-    nav, .team-container{
+    nav, .team-container, .card-container{
         flex-direction: column;
     }
     nav ul{
@@ -142,6 +192,13 @@ main{
     .team-content{
         margin-top: 2rem;
     }
+    .card-container{
+        padding: 0 1.5rem;
+        gap: 1.2rem;
+    }
+    .fact-description{
+        padding: 0 1.5rem;
+    }
 }
 
 /* tablet or medium devices */
@@ -159,9 +216,15 @@ main{
         width: 100%;
         padding-top: 60px;
     }
-    .team-content{
+    .team-content, .card-container{
         margin-top: 2rem;
-        /* padding-right: 1.5rem;
-        padding-left: 1.5rem; */
+    }
+    .card-container{
+        padding: 0 1.5rem;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+    }
+    .fact-description{
+        padding: 0 1.5rem;
     }
 }
