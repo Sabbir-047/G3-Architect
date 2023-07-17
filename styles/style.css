@@ -31,10 +31,11 @@
     color: white;
     font-size: 1.25rem;
     font-weight: 600;
-    padding: 1.3rem 1.5rem;
+    padding: 20px 25px;
     border: none;
     border-radius: 0.5rem;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 
@@ -70,7 +71,7 @@ nav li a{
 /* Banner Styles */
 .banner-content{
     padding: 102px 0px 50px 0px;
-    width: 862px;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
 }
@@ -79,5 +80,48 @@ nav li a{
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
-    padding-bottom: 1.25rem;
+    padding-bottom: 20px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+/* Responsive-media-queries */
+
+/* Small Devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        padding-top: 45px;
+    }
+    nav li{
+        margin-left: 20px;
+    }
+    .banner-content{
+        width: 100%;
+        padding-top: 60px;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        padding-top: 60px;
+    }
+    .banner-content{
+        width: 100%;
+        padding-top: 60px;
+    }
 }
