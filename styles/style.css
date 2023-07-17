@@ -157,7 +157,21 @@ main{
     color: #727272;
 }
 
+/* Sponsors Styles */
+.sponsor-container{
+    padding-bottom: 45px;
+}
 
+.sponsor-description{
+    text-align: center;
+}
+
+.sponsor-company-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    padding-top: 50px;
+}
 
 
 
@@ -199,6 +213,10 @@ main{
     .fact-description{
         padding: 0 1.5rem;
     }
+    .sponsor-company-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 /* tablet or medium devices */
@@ -226,5 +244,9 @@ main{
     }
     .fact-description{
         padding: 0 1.5rem;
+    }
+    .sponsor-company-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
